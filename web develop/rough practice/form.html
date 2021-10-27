@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--<meta name="viewport" content="width=device-witdh, initial-scale=1.0">-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+        <title>form in css</title>
+        <style>
+            body{
+                max-width: 1200px;
+                min-width:200px;
+            }
+            fieldset{
+                border:solid tomato 3px;
+                margin-bottom: 25px;
+                border-radius: 25px;
+                padding-left: 5%;
+                min-width:1200px;
+            }
+            #gender,#luckynumber{
+                border:thin solid springgreen;
+            }
+            legend{
+                color:red;
+                font-family: 'Zen Tokyo Zoo', cursive;
+                background-color: rgb(54, 54, 54);
+                padding:5px;
+                border-radius: 50px;
+                margin-left: -2%;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Login Form</h1>
+            <form action="">
+                    <fieldset>
+                    <legend>login details</legend>
+                    <p><label for="username">username:<br><input type="text" name="username" id="username"><br></label></p>
+                    <p><label for="email">Email id:<br><input type="email" name="email" id="email"><br></label></p>
+                    <p><label for="password">password:<br><input type="password" name="password" id="password"><br></label></p>
+                    <p><label for="cpassword">confirm password:<br><input type="password" name="cpassword" id="cpassword"><br></label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Education details</legend>
+                    <p><label for="qulification">Qulification:<br><input type="text" name="qulification" id="qulification"><br></label></p>
+                    <p><label for="colloege">colloege:<br><input type="text" name="colloege" id="colloege"><br></label></p>
+                    <p><label for="year">year passed:<br><input type="number" name="year" id="year"><br></label></p>
+                    <p id="gender">
+                        <label>gender:</label><br>
+                        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                        <input type="radio" name="gender" id="others" value="others"><label for="others">Others</label>
+                    </p>
+                    <p id="gender">
+                        <label>sports:</label><br>
+                        <input type="checkbox" name="sports[]" id="kabadi" value="kabade"><label for="kabadi">Kabadi</label>
+                        <input type="checkbox" name="sports[]" id="vollyball" value="vollyball"><label for="vollyball">Vollyball</label>
+                        <input type="checkbox" name="sports[]" id="cricket" value="cricket"><label for="cricket">Cricket</label>
+                    </p>
+                    <p>
+                        <label for="luckynuber">Entre Your luckynuber:</label>
+                        <select name="luckynumber" id="luckynumber">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option> 
+                            
+                        </select>
+                    </p>
+                </fieldset>
+            </form>    
+        </div>
+    </body>
+</html>

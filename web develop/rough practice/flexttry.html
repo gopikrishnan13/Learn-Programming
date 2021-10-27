@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container_direction{
+            border: 5px solid black;
+            padding: 10px;
+            display: flex;
+           /*
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            */
+        }
+        .box{
+            padding: 30px;
+            border: 5px solid rebeccapurple;
+            margin: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        /*
+        .box:nth-of-type(odd){
+            background-color: red;
+        }
+        */
+        .container_wrap{
+            width: 200px;
+            display: flex;
+            border: 5px solid black;
+            padding: 10px;
+            background-color: burlywood;
+            flex-wrap: wrap;
+        }
+        .box_w{
+            font-size: 30px;
+            border: chartreuse 2px solid;
+            background-color: darkgrey;
+            padding: 30px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .container_justify{
+            width:100%;
+            display: flex;
+            border: 5px solid black;
+            padding: 10px;
+            background-color: burlywood;
+            /*
+            justify-content: flex-end;
+            justify-content: flex-start;
+            justify-content: space-between;
+            justify-content: space-around;
+            */
+            justify-content: center;
+        }
+        .box_J{
+            font-size: 30px;
+            border: chartreuse 2px solid;
+            background-color: darkgrey;
+            padding: 30px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .container_align{
+            width:400px;
+            height: 400px;
+            display: flex;
+            border: 5px solid black;
+            padding: 10px;
+            background-color: burlywood;
+            flex-wrap: wrap;
+            align-content: space-between;
+            /*
+            align-content: space-around;
+            align-content: flex-start;
+            align-content: center;
+            align-content: baseline;
+            align-content: flex-end;
+            align-content: stretch;
+            */
+        }
+        .box_A{
+            font-size: 30px;
+            border: chartreuse 2px solid;
+            background-color: darkgrey;
+            padding: 30px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .container_order{
+            width:100%;
+            display: flex;
+            border: 5px solid black;
+            padding: 10px;
+            background-color: burlywood;
+        }
+        .box_O{
+            font-size: 30px;
+            border: chartreuse 2px solid;
+            background-color: darkgrey;
+            padding: 30px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .box_O:nth-child(3){
+            order: 1;
+        }
+        .box_O:nth-child(5){
+            order: 3;
+        }
+        .box_O:nth-child(1){
+            order: 5;
+        }
+        .box_O:nth-child(2){
+            order: 4;
+        }
+        .box_O:nth-child(4){
+            order: 2;
+        }
+        .container_self{
+            width:300px;
+            height: 600px;
+            display: flex;
+            border: 5px solid black;
+            padding: 10px;
+            background-color: burlywood;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .box_as{
+            font-size: 30px;
+            border: chartreuse 2px solid;
+            background-color: darkgrey;
+            padding: 30px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .box_as:nth-child(1){
+            align-self: stretch;
+        }
+        .box_as:nth-child(2){
+            align-self: flex-start;
+        }
+        .box_as:nth-child(3){
+            align-self: center;
+        }
+        .box_as:nth-child(4){
+            align-self: auto;
+        }
+        .box_as:nth-child(5){
+            align-self: flex-end;
+        }
+        .container_grow{
+            width:100%;
+            display: flex;
+            border: 5px solid black;
+            padding: 10px;
+            background-color: burlywood;
+        }
+        .box_g{
+            font-size: 30px;
+            border: chartreuse 2px solid;
+            background-color: darkgrey;
+            padding: 30px;
+            margin: 1px;
+            font-weight: bold;
+        }
+        .box_g:nth-child(2){
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex direction</h2>
+    <fieldset class="container_direction">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </fieldset>
+
+    <hr>
+
+    <h2>Flex Wrap</h2>
+    <fieldset class="container_wrap">
+        <div class="box_w">1</div>
+        <div class="box_w">2</div>
+        <div class="box_w">3</div>
+        <div class="box_w">4</div>
+        <div class="box_w">5</div>
+    </fieldset>
+    
+    <hr>
+
+    <h2>Flex Justify content</h2>
+    <fieldset class="container_justify">
+        <div class="box_J">1</div>
+        <div class="box_J">2</div>
+        <div class="box_J">3</div>
+        <div class="box_J">4</div>
+        <div class="box_J">5</div>
+    </fieldset>
+
+    <hr>
+    
+    <h2>Flex Align content <span>(Cross-axis alignment)</span></h2>
+    <fieldset class="container_align">
+        <div class="box_A">1</div>
+        <div class="box_A">2</div>
+        <div class="box_A">3</div>
+        <div class="box_A">4</div>
+        <div class="box_A">5</div>
+    </fieldset>
+
+    <hr>
+    
+    <h2>Flex Order</h2>
+    <fieldset class="container_order">
+        <div class="box_O">1</div>
+        <div class="box_O">2</div>
+        <div class="box_O">3</div>
+        <div class="box_O">4</div>
+        <div class="box_O">5</div>
+    </fieldset>
+
+    <hr>
+    
+    <h2>Flex Align-self</h2>
+    <fieldset class="container_self">
+        <div class="box_as">1</div>
+        <div class="box_as">2</div>
+        <div class="box_as">3</div>
+        <div class="box_as">4</div>
+        <div class="box_as">5</div>
+    </fieldset>
+
+    <hr>
+    
+    <h2>Flex Grow and shrink</h2>
+    <fieldset class="container_grow">
+        <div class="box_g">1</div>
+        <div class="box_g">2</div>
+        <div class="box_g">3</div>
+        <div class="box_g">4</div>
+        <div class="box_g">5</div>
+    </fieldset>
+    
+    <hr>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+     _______________________________________________________
+    /\                        WARNING                       \
+(O)===)><><><><><><><><><><><><><><><><><><><><><><><><><><><)==(O)
+    \/''''''''''''''''''''''''''''''''''''''''''''''''''''''/
+    (  Password must be minimum of 8 characters             (
+     )                                                      )
+    (  Password must be maxmium of 16 characters            (
+     )                                                      )
+    (  Password must have one Uppercase Character           (
+     )                                                      )
+    (  Password must have three Lowercase Characters        (
+     )                                                      )
+    (  Password must have one symbol                        (
+     )                                                      )
+    (  Password must have three Numeric                    (
+     )                                                      )
+    (  Numeric Characters that are not sequential           (
+     )                                                      )
+    (                                                      (
+    /\''''''''''''''''''''''''''''''''''''''''''''''''''''''\    
+(O)===)><><><><><><><><><><><><><><><><><><><><><><><><><><><)==(O)
+    \/______________________________________________________/

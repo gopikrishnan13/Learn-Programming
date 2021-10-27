@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <style>
+            #tab{
+                width: 85%;
+                border: 3px solid black;
+                border-collapse: collapse;
+                empty-cells: show;
+                background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg);
+                background-position: 50% 60%;
+                background-size: 50%;
+                background-repeat:no-repeat;
+            }
+            table{
+                empty-cells: hide;
+            }
+            th,td{
+                border: 1px solid black;
+                padding: 5px;
+            }
+            td{
+                background-color: rgba(172, 255, 47, 0.418);
+            }
+            #time{
+                background-color:darkseagreen;
+                text-transform: uppercase;
+                color:black;
+            }
+            .day{
+                text-align: left;
+                background-color: coral;
+                color:beige;
+                -webkit-text-stroke:black;
+            }
+            #day{
+                background-color:salmon;
+                text-transform: uppercase;
+                color: blue;
+            }
+            #break{
+                background-color: rgba(0, 255, 255, 0.308);
+                text-transform: uppercase;
+                white-space: nowrap;
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+            }
+            .time{
+                background-color: darkmagenta;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Time Table</h1>
+        <div>
+        <table id="tab">
+            <tr>
+                <th id="day"rowspan="2">Day</th>
+                <th id="time" colspan="11">Time</th>
+    </tr>
+    <tr> 
+        <th class="time">9:00 - 9:45</a></th>
+        <th class="time">9:45 - 10:30</th>
+        <th id="break"rowspan="7">Recess</th>
+        <th class="time">10:45 - 11:30</th>
+        <th class="time">11:30 - 12:15</th>
+        <th id="break" rowspan="7">Lunch</th>
+        <th class="time">1:15 - 2:00</th>
+        <th class="time">2:00 - 2:45</th>
+        <th id="break" rowspan="7">Recess</th>
+        <th class="time">3:00 - 3:45</th>
+        <th class="time">3:45 - 4:30</th>
+    </tr>
+    <tr>
+        <th class="day">Monday</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th class="day">Tuseday</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th class="day">Wednesday</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th class="day">Thursday</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th class="day">Friday</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th class="day">Saturday</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </table>
+    </div>
+    <div>
+        <br>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

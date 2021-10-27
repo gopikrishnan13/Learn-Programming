@@ -1,0 +1,27 @@
+Hello, Have a nice day:)
+
+#This is a simple php game. The conspect is simple they arr one buliding that
+    arrested by terorist.you have some of helichopter, so you land the top of the
+    building and rescuse a people.
+#In a building have a some of room's that depand on building size the default size is (8X8),
+    if you want to change the size ther are some option in the game so you just go that 
+    option's and simple change the building size.
+#At the same tiime in room have a one terorist and one hostage. you land a one choper at the
+    point you save a that x axis and y axis live shape over.
+    ex:
+        0 0 0 0 1 0 0 0
+        1 1 1 1 1 1 1 1
+        0 0 0 0 1 0 0 0
+        0 0 0 0 1 0 0 0
+        0 0 0 0 1 0 0 0
+        0 0 0 0 1 0 0 0
+        0 0 0 0 1 0 0 0
+        0 0 0 0 1 0 0 0
+    in this type you land a choper at (2,5) axis and saved a 15 people's.
+#your objective is not save all people if check where you land a choper how people are save and 
+    check and play.
+#you land a multiple helichopter as same point.
+#Ther are some rules in game you follow it.
+#The game have only intger type value are accpet so entre a value carefully,
+    you entre a wrong input it's throw an error.
+#Thankyou:).
