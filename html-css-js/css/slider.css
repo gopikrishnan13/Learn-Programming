@@ -1,0 +1,45 @@
+body{
+    border: 1px solid red;
+    width: 50%;
+    height: 50vh;
+}
+
+.slider-container{
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.slider-item{
+    border: 1px solid green;
+    width: 200px;
+    height: 300px;
+    padding: 1rem;
+    transition: all .6s;
+}
+
+.slider-container a span{
+    margin: 1rem;
+}
+
+#left{
+    background: yellow;
+    position: relative;
+    left: 2rem;   
+}
+
+#center{
+    z-index: 1;
+    background: violet;
+    width: 225px;
+    height: 325px;
+}
+
+#right{
+    background:turquoise;
+    position: relative;
+    right: 2rem;
+}

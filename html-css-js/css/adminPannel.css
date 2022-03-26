@@ -377,10 +377,7 @@ main .recent-orders a{
     display: block;
     margin: 1rem auto;
     color: var(--color-primary);
-}
-
-/* ---------- Main end ---------- */
-
+}r
 /* ############# Right Side Start ############ */
 .right{
     margin-top: 1.4rem;
